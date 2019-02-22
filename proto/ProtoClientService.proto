@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package com.alipay.sofa.rpc.protobuf;
+option java_multiple_files = true; // 可选
+option java_outer_classname = "ProtoClientServiceModels"; // 可选
+
+service ProtoClientService {
+    rpc echoObj (EchoRequest) returns (EchoResponse) {}
+}
